@@ -6,17 +6,19 @@
     <title>Petrof Music Store Portal</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: black;
-            color: white;
+            font-family: 'Comic Sans MS', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: black;
+            background-color: #ff6347;
             color: white;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
+            font-size: 2em;
+            border-bottom: 5px solid #fff;
         }
         .container {
             text-align: center;
@@ -24,50 +26,57 @@
         }
         .link-button {
             display: inline-block;
-            background-color: white;
-            color: black;
+            background-color: #ff69b4;
+            color: white;
             padding: 15px 25px;
             margin: 10px;
             text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-            font-weight: bold;
+            border-radius: 10px;
+            font-size: 1.2em;
+            transition: transform 0.3s, background-color 0.3s;
         }
         .link-button:hover {
-            background-color: black;
-            color: white;
+            background-color: #ff1493;
+            transform: scale(1.1);
         }
         /* Accordion styles */
         .accordion {
-            background-color: #333;
-            color: white;
+            background-color: #ffcc00;
+            color: #333;
             cursor: pointer;
-            padding: 15px;
+            padding: 20px;
             width: 100%;
             border: none;
             text-align: left;
+            font-size: 1.5em;
             outline: none;
-            font-size: 18px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: background-color 0.3s;
         }
         .accordion:hover {
-            background-color: #444;
+            background-color: #ff4500;
         }
         .active, .accordion:focus {
-            background-color: #444;
+            background-color: #ff4500;
+            color: white;
         }
         .panel {
-            padding: 0 18px;
+            padding: 15px;
             display: none;
-            background-color: #222;
-            overflow: hidden;
-            color: white;
+            background-color: #ffffe0;
+            color: #333;
+            font-size: 1.2em;
+            border-radius: 10px;
+            margin-top: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Petrof Music and buy our crypto token!</h1>
+        Welcome to Petrof Music and buy our crypto token!
         <p>Petrof Music Store is launching its utility meme coin - AccordAIon.</p>
     </header>
 
