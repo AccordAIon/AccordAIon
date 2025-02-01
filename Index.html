@@ -37,6 +37,32 @@
             background-color: black;
             color: white;
         }
+        /* Accordion styles */
+        .accordion {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        .accordion:hover {
+            background-color: #444;
+        }
+        .active, .accordion:focus {
+            background-color: #444;
+        }
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: #222;
+            overflow: hidden;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -50,6 +76,27 @@
         <a href="https://www.etsy.com/shop/TheMusicstorePetrof" class="link-button" target="_blank">Etsy - The Music Store Petrof</a>
         <a href="https://www.ebay.com/usr/petrofmusicstore" class="link-button" target="_blank">eBay - Petrof Music Store (US)</a>
         <a href="https://www.ebay.co.uk/usr/themusicstorepetrof?_tab=feedback" class="link-button" target="_blank">eBay - The Music Store Petrof (UK)</a>
+
+        <button class="accordion">Learn More About AccordAIon</button>
+        <div class="panel">
+            <p>AccordAIon is a utility meme coin designed for the Petrof Music Store ecosystem. It's a fun way to get involved in the world of crypto while supporting a brand that loves music.</p>
+        </div>
     </div>
+
+    <script>
+        // Accordion functionality
+        var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
 </body>
 </html>
